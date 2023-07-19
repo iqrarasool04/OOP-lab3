@@ -20,10 +20,6 @@ class Swap{
         *var1 = *var2;
         *var2 = temp;
     }
-    void PrintNumbers(){
-        cout<<"var1 = "<<var1<<endl;
-        cout<<"var2 = "<<var2<<endl;
-    }
 };
 
 int main(){
@@ -35,6 +31,13 @@ int main(){
     cin>>y;
     cout<<endl;
     Swap s1(x,y);
+    cout<<"Value of variables before swapping "<<endl;;
+    cout<<"var1 = "<<x<<endl;
+    cout<<"var2 = "<<y<<endl;
+    cout<<endl;
+    cout<<"Value of variables after swapping "<<endl;
     s1.swapNumbers(&x,&y);
-    s1.PrintNumbers();
+    cout<<"var1 = "<<x<<endl;
+    cout<<"var2 = "<<y<<endl;
 }
+
